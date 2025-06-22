@@ -1,0 +1,14 @@
+{
+  "name": "realtime-messaging-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
